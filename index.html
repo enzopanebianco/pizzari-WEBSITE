@@ -1,0 +1,541 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /*CSS*/
+
+        @font-face {
+            src: url("fonts/Lucida.ttf");
+            font-family: Lucidacalligraphyitalic;
+        }
+
+        * {
+            font-family: Lucidacalligraphyitalic;
+
+        }
+
+        .cabeçalho {
+            background-color: #191935;
+            height: 49px;
+            width: 1366px;
+        }
+
+        .cabeçalho-item {
+            font-size: 24pt;
+            color: #ccc844;
+
+
+
+        }
+
+        .cabeçalho a {
+            display: inline;
+            padding: 0px 2px 15px 30px;
+
+        }
+
+        .cabeçalho li {
+            display: inline;
+        }
+
+        /*banner do cabeçalho*/
+
+        .bannerFundo {
+            width: 1366px;
+            height: 512px;
+            background: url("1x/banner1.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .bannerimg img {
+            width: 225px;
+            height: 208px;
+            margin: 0 auto;
+            display: block;
+            transform: translateY(-30px)
+        }
+
+        .retangulo img {
+            width: 339px;
+            height: 420px;
+            margin-left: 92px;
+            margin-top: -200px;
+
+        }
+
+        .pizzapromocao img {
+            width: 216px;
+            height: 210px;
+            margin-left: 150px;
+            transform: translateY(-350px)
+        }
+
+        .bannerFundo h2 {
+            transform: translateY(-650px);
+            color: #ccc844;
+            margin-left: 118px;
+            font-size: 24pt;
+        }
+
+        .bannerFundo h3 {
+            transform: translateY(-420px);
+            color: #ccc844;
+            margin-left: 150px;
+            font-size: 24pt;
+        }
+
+        .bannerFundo p {
+            color: #ffffff;
+            font-size: 24pt;
+            margin-left: 220px;
+            transform: translateY(-440px);
+            background-color: #ccc844;
+            width: 90px;
+            height: 34px;
+
+
+        }
+
+
+        /*linha e circulo*/
+
+        .quebra .quadrado {
+            width: 1366px;
+            height: 14px;
+            background-color: #ccc844;
+            margin-top: -5px;
+        }
+
+
+        .bannerFundo2 {
+            width: 1366px;
+            height: 812px;
+            background: url("1x/banner2.png");
+            background-size: cover;
+            background-position: center;
+            margin-top: -72px;
+
+        }
+
+        .bannerFundo2 h2 {
+            color: #ccc844;
+            font-size: 55pt;
+            text-align: center;
+            padding: 25px 0px 0px 0px
+        }
+
+        .superveggie h3 {
+            color: #ccc844;
+            font-size: 48pt;
+            margin-left: 41px;
+            margin-top: 160px;
+        }
+
+        .superveggie img {
+            width: 244px;
+            height: 263px;
+            margin-left: 102px;
+            margin-top: -90px;
+
+        }
+
+        .mushrooms h3 {
+            color: #ccc844;
+            font-size: 40pt;
+            margin-left: 537px;
+            margin-top: -400px;
+        }
+
+        .mushroomsimg img {
+            width: 275px;
+            height: 218px;
+            padding: 29px 0px 50px 550px;
+        }
+
+        .pepperoni h3 {
+            color: #ccc844;
+            font-size: 40pt;
+            margin-left: 1020px;
+            margin-top: -410px;
+        }
+
+        .pepperoniimg img {
+            width: 243px;
+            height: 238px;
+            margin-left:1030px;
+
+        }
+
+        .precosupperveggie {
+            color: #ccc844;
+            font-size: 48pt;
+            margin-left: 151px;
+            margin-top: -850px;
+        }
+
+        .preco29 {
+            color: #ccc844;
+            font-size: 48pt;
+            margin-top: -132px;
+            margin-left: 620px;
+
+        }
+
+        .preco24 {
+            color: #ccc844;
+            font-size: 48pt;
+            margin-top: -132px;
+            margin-left: 1030px;
+        }
+
+
+
+        .queijo img {
+            width: 152px;
+            height: 140px;
+            transform: translateY(-550px);
+            margin-left: 36px;
+
+        }
+
+        .folha img {
+            width: 218px;
+            height: 218px;
+            transform: translateY(-110px);
+            margin-left: 20px;
+
+        }
+
+        .folha2 img {
+            width: 218px;
+            height: 218px;
+            transform: translateY(-960px);
+            margin-left: 1179px;
+
+        }
+
+        .tomate img {
+            width: 190px;
+            height: 145px;
+            transform: translateY(-520px);
+            margin-left: 1150px;
+
+
+        }
+
+        .quebra .quadrados {
+            width: 1366px;
+            height: 14px;
+            background-color: #ccc844;
+            margin-top: -10px;
+
+        }
+
+        .quebra .circulos {
+            background-color: #ccc844;
+            height: 72px;
+            border-radius: 50%;
+            margin: 0px 0px 0px 663px;
+            margin-top: -40px;
+            width: 72px;
+        }
+
+        #banner3 {
+            width: 1366px;
+            height: 870px;
+            background: url("1x/banner3.png");
+            background-size: cover;
+            background-position: center;
+            /* transform: translateY(-100px);*/
+        }
+
+        .osmelhoresingredientes h2 {
+            color: #ccc844;
+            font-size: 56pt;
+            text-align: center;
+            padding: -30px 0px 0px 0px
+        }
+
+        .osmelhoresingredientes p {
+            color: white;
+            font-size: 24pt;
+            text-align: center;
+            padding: 25px 0px 0px 0px
+        }
+
+        .folha3 img {
+            width: 280px;
+            height: 280px;
+            margin-left: 1119px;
+            transform: translateY(-529px);
+        }
+
+        .queijo2 img {
+            width: 152px;
+            height: 140px;
+            transform: translateY(-730px);
+            margin-left: 36px;
+
+        }
+
+        .quebra2 .quadrados2 {
+            width: 1366px;
+            height: 14px;
+            background-color: #ccc844;
+            margin-top: -310px;
+
+        }
+
+        .quebra2 .circulos2 {
+            background-color: #ccc844;
+            height: 72px;
+            border-radius: 50%;
+            margin: 0px 0px 0px 663px;
+            margin-top: -40px;
+            width: 72px;
+        }
+
+        .CasaBeixiga h2 {
+            color: #ccc844;
+            font-size: 26pt;
+
+            margin-left: 279px;
+
+        }
+
+        .CasaBeixiga p {
+            color: #ffffff;
+            font-size: 18pt;
+
+            margin-left: 279px;
+
+        }
+
+        .CasaMoema h2 {
+            color: #ccc844;
+            font-size: 26pt;
+            transform: translateY(-133px);
+            margin-left: 589px;
+
+        }
+
+        .CasaMoemap {
+            color: #ffffff;
+            font-size: 18pt;
+            transform: translateY(-138px);
+            margin-left: 587px;
+        }
+
+        .CasaSantana h2 {
+            color: #ccc844;
+            font-size: 26pt;
+            transform: translateY(-268px);
+            margin-left: 891px;
+        }
+
+        .CasaSantanap {
+            color: #ffffff;
+            font-size: 18pt;
+            transform: translateY(-275px);
+            margin-left: 888px;
+        }
+
+        
+
+        .delivery {
+            color: #ffffff;
+            font-size: 26pt;
+            transform: translateY(-300px);
+            margin-left: 519px;
+        }
+
+        .folha4 img {
+            width: 218px;
+            height: 218px;
+            transform: translateY(-600px);
+            margin-left: 20px;
+
+        }
+
+        .tomate4 img {
+            width: 190px;
+            height: 145px;
+            transform: translateY(-770px);
+            margin-left: 1150px;
+
+
+        }
+
+        .Redes img {
+            width: 155px;
+            height: 42px;
+            transform: translateY(-720px);
+            margin-left: 630px;
+        }
+
+        
+    </style>
+
+    <body>
+        <header>
+            <div class='cabeçalho'>
+                <nav class='cabeçalho-item'>
+                    <ul></ul>
+                    <li>
+                        <a href='#'></a>HOME</li>
+                    <li>
+                        <a href='#'></a>PROMOÇÕES</li>
+                    <li>
+                        <a href='#'></a>CARDÁPIO</li>
+                    <li>
+                        <a href='#'></a>CONTATO</li>
+                    <li>
+                        <a href='#'></a>FAÇA SEU PEDIDO</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+</head>
+<main class='container'>
+    <div class='bannerFundo'>
+        <div class='bannerimg'>
+            <img src="1x/Logo.png" alt="Logo da empresa">
+        </div>
+        <div class='retangulo'>
+            <img src="1x/Retangulo.png" alt='promoçao'>
+        </div>
+        <div class='pizzapromocao'>
+            <img src='1x/pizzapromocao.png' alt='pizza da promoçao'>
+        </div>
+        <h2>Promoção do Dia</h2>
+        <h3>Vegetariana</h3>
+        <p>19,90</p>
+        <div id="preco">
+
+        </div>
+    </div>
+    <div class='quebra'>
+        <div class='quadrado'></div>
+    </div>
+
+    <section class='bannerFundo2'>
+
+        <h2>Destaques do Cardápio</h2>
+        <div id='correçao'>
+
+        </div>
+        <div class='superveggie'>
+            <h3>Super Veggie</h3>
+            <img src='1x/supperveggie.png'>
+        </div>
+        </div>
+        <div class='mushrooms'>
+            <h3>Mushrooms</div>
+        </div>
+        <div class="mushroomsimg">
+            <img src='1x/mushrooms.png'>
+        </div>
+        <div class="pepperoni">
+            <h3>Pepperoni</h3>
+        </div>
+        <div class=pepperoniimg>
+            <img src="1x/Pepperoni.png">
+        </div>
+        <div class='queijo'>
+            <img src='1x/queijo.png'>
+        </div>
+        <div class='folha'>
+            <img src='1x/folha.png'>
+        </div>
+        <div class='folha2'>
+            <img src='1x/folha.png'>
+        </div>
+        <div class='tomate'>
+            <img src='1x/Tomate.png'>
+
+        </div>
+        <div class="precosupperveggie">
+            <p>29,90 </p>
+        </div>
+
+        <div class="preco29">
+            <p>29,90</p>
+        </div>
+        <div class='preco24'>
+            <p>24,90</p>
+        </div>
+
+    </section>
+
+    <section>
+        <div id='banner3'>
+            <div class='quebra'>
+                <div class='quadrados'></div>
+                <div class='circulos'></div>
+            </div>
+            <div class='osmelhoresingredientes'>
+                <h2>Os Melhores Ingredientes</h2>
+                <p>A Speranza oferece mais de 23 sabores de Pizza, </p>
+                <p> com uma grande variedade de ingredientes e tipos de massa</p>
+                <p>Nossos ingredientes são todos naturais e da melhor qualidade</p>
+                <div class='folha3'>
+                    <img src='1x/folha.png'>
+                </div>
+                <div class="queijo2">
+                    <img src="1x/queijo.png">
+                </div>
+            </div>
+
+        </div>
+        <section>
+
+            <div class='quebra2'>
+                <div class='quadrados2'></div>
+                <div class='circulos2'></div>
+            </div>
+        </section>
+        <div class="CasaBeixiga">
+            <h2>Casa Beixiga</h2>
+            <p>Rua 13 de Maio,1004</p>
+
+        </div>
+        <div class="CasaMoema">
+            <h2>Casa Moema</div>
+        <div class="CasaMoemap">
+            <p>Avenida Sabiá 786</p>
+        </div>
+        </div>
+        <div class="CasaSantana">
+            <h2>Casa Santana</h2>
+            <div class="CasaSantanap">
+                <p>Rua Augusto Tolle,464</p>
+            </div>
+        </div>
+        <div class="delivery">
+            <p>Delivery 2222-1994</p>
+        </div>
+        <div class='folha4'>
+            <img src="1x/folha.png">
+        </div>
+        <div class='tomate4'>
+            <img src="1x/Tomate.png">
+        </div>
+        <div class='Redes'>
+            <img src="1x/RedesqqqS.png">
+        </div>
+
+
+
+
+
+    </section>
+</main>
+</body>
+
+</html>
